@@ -8,8 +8,8 @@
 <body>
 <!-- 지도를 표시할 div 입니다 -->
 <div id="map" style="width:100%;height:350px;"></div>
-
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5ec7c540b1ea150750443f25e24013dc"></script>
+ 
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5ec7c540b1ea150750443f25e24013dc"></script> 
 <script>
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
@@ -21,7 +21,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 var map = new kakao.maps.Map(mapContainer, mapOption); 
 
 var makerPos = new kakao.maps.LatLng(33.450701, 126.570667)
-var makerPos = new kakao.maps.Marker(
+var maker = new kakao.maps.Marker(
     {position:makerPos}
 )
 function setCenter(lat, lng)
